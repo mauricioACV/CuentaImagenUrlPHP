@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Busca JPG en Página Web - Unab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1>Cuenta JPG en Pagina Web</h1></div>
+        Ingrese Url: http://<input type="text" id="url" size="12" value="www.unab.cl" onkeypress="return soloLetras(event)">
+        <input type="button" value="Enviar" onclick='operacion();'>
+        
+        <div id="divCargando" style="display: none;">
+            <label id="labelCargando"></label>
+        </div>
+        
+        <div id="divResultado" style="display:none">
+            <label id="labelResultado"></label>
+            <br><input type="button" value="Reiniciar" onclick='reiniciar();'>
+        </div>
+        
+        <script src="js/funciones.js"></script>
+        <script src="js/jquery.js"></script>        
+        
+    </body>
+</html>
